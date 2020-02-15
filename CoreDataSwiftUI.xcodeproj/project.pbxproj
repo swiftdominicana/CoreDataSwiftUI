@@ -14,8 +14,8 @@
 		EE0B763023F76E9B00DE0C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0B762F23F76E9B00DE0C80 /* Assets.xcassets */; };
 		EE0B763323F76E9B00DE0C80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0B763223F76E9B00DE0C80 /* Preview Assets.xcassets */; };
 		EE0B763623F76E9B00DE0C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0B763423F76E9B00DE0C80 /* LaunchScreen.storyboard */; };
-		EE0B764323F77A8500DE0C80 /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B764123F77A8500DE0C80 /* Device+CoreDataClass.swift */; };
-		EE0B764423F77A8500DE0C80 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B764223F77A8500DE0C80 /* Device+CoreDataProperties.swift */; };
+		EE0B764723F77E0800DE0C80 /* Device+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B764523F77E0800DE0C80 /* Device+CoreDataProperties.swift */; };
+		EE0B764823F77E0800DE0C80 /* Device+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B764623F77E0800DE0C80 /* Device+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		EE0B763223F76E9B00DE0C80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE0B763523F76E9B00DE0C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE0B763723F76E9B00DE0C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE0B764123F77A8500DE0C80 /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		EE0B764223F77A8500DE0C80 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		EE0B764523F77E0800DE0C80 /* Device+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE0B764623F77E0800DE0C80 /* Device+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,7 @@
 		EE0B762523F76E9900DE0C80 /* CoreDataSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				EE0B764123F77A8500DE0C80 /* Device+CoreDataClass.swift */,
-				EE0B764223F77A8500DE0C80 /* Device+CoreDataProperties.swift */,
+				EE0B764923F77E0B00DE0C80 /* CoreData */,
 				EE0B762623F76E9900DE0C80 /* AppDelegate.swift */,
 				EE0B762823F76E9900DE0C80 /* SceneDelegate.swift */,
 				EE0B762D23F76E9900DE0C80 /* ContentView.swift */,
@@ -82,6 +81,15 @@
 				EE0B763223F76E9B00DE0C80 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE0B764923F77E0B00DE0C80 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EE0B764623F77E0800DE0C80 /* Device+CoreDataClass.swift */,
+				EE0B764523F77E0800DE0C80 /* Device+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0B762C23F76E9900DE0C80 /* CoreDataSwiftUI.xcdatamodeld in Sources */,
-				EE0B764423F77A8500DE0C80 /* Device+CoreDataProperties.swift in Sources */,
 				EE0B762723F76E9900DE0C80 /* AppDelegate.swift in Sources */,
+				EE0B764723F77E0800DE0C80 /* Device+CoreDataProperties.swift in Sources */,
+				EE0B764823F77E0800DE0C80 /* Device+CoreDataClass.swift in Sources */,
 				EE0B762E23F76E9900DE0C80 /* ContentView.swift in Sources */,
 				EE0B762923F76E9900DE0C80 /* SceneDelegate.swift in Sources */,
-				EE0B764323F77A8500DE0C80 /* Device+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
